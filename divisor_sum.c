@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    int ans = 0;
+    printf("Enter value of a is: ");
+    scanf("%d", &a);
+    for (int i = 1; i < a; i++)
+    {
+        if (a % i == 0)
+        {
+            ans += i;
+        }
+    }
+    printf("%d", ans);
+
+    return 0;
+}
